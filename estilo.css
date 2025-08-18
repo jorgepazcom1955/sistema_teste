@@ -1,0 +1,194 @@
+
+/* ✅ Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #e70b0b;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* ✅ Produtos do estoque */
+.produto {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  background-color: #32ee08;
+}
+
+/* ✅ Destaque para estoque baixo */
+.estoque-baixo {
+  background-color: #ffcccc;
+  color: #a10000;
+  font-weight: bold;
+}
+
+/* ✅ Alertas */
+#alertas {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+/* ✅ Boas-vindas */
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #4CAF50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeOut 2s ease forwards;
+  animation-delay: 4s;
+  font-size: 25px;
+  
+}
+
+h2{
+  font-size:45px;
+}
+
+h3{
+  color: #053999;
+}
+
+p{
+  font-size: 18px;
+  color: #e70b0b;
+}
+
+#splash img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ✅ Botões e formulários */
+form {
+  margin: 15px 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #93ec9f;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+section {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#resultadoBusca, #resultadoPeso {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #areaDeImpressao, #areaDeImpressao * {
+    visibility: visible;
+  }
+  #areaDeImpressao {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#recibo {
+  margin-top: 20px;
+  border: 1px dashed #333;
+  padding: 10px;
+  width: 250px;
+  background-color: #f9f9f9;
+}
+
+#recibo {
+  font-family: 'Courier New', monospace;
+}
+
+#recibo {
+  text-align: center;
+}
+
+#recibo {
+  width: 200px;
+  margin: auto;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #recibo, #recibo * {
+    visibility: visible;
+  }
+
+  #recibo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+  

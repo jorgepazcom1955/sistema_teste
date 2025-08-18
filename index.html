@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Morezine</title>
+      <link rel="stylesheet" href="css/estilo.css" />
+    </head>
+
+      <body>
+        <!-- ✅ Tela de Boas-Vindas -->
+        <div id="splash">
+          <img src="img/download.jpg" alt="Logo Mercadinho" />
+          <h2>Seja Bem Vindo</h2>
+          <h3>Mercadinho Sacolão do João!</h3>
+          <p>Carregando o sistema...</p>
+        </div>
+
+        <!--Controle de Produtos -->
+        <h1>Controle de Produtos 🛒</h1>
+      
+        <section id="cadastro">
+          <h2>Cadastrar Produto</h2>
+          <input type="text" id="codigo" placeholder="Código do produto" />
+          <input type="text" id="nome" placeholder="Nome do produto" />
+          <input type="number" id="preco" placeholder="Preço (R$)" />
+          <button onclick="cadastrarProduto()">Cadastrar</button>
+        </section>
+        
+          <h2>Cadastrar Produto</h2>
+          <form id="form-produto">
+            <label>Tipo de código:
+              <select id="tipo-codigo">
+                <option value="numerico">Numérico</option>
+                <option value="letras">Letras</option>
+                <option value="barras">Código de Barras</option>
+              </select>
+            </label><br />
+
+          </form>
+          <form id="form-produto">
+            <label>Código: <input type="text" id="codigo-produto" /></label><br />
+            <label>Nome: <input type="text" id="nome-produto" /></label><br />
+            <label>Preço (R$): <input type="number" id="preco-produto" /></label><br />
+            <button type="button" onclick="cadastrarProduto()">Cadastrar</button>
+          </form>
+          <ul id="lista-produtos"></ul>
+
+          <!-- Busca-->
+        
+          <section id="busca">
+            <h2>Buscar Produto</h2>
+            <input type="text" id="buscaCodigo" placeholder="Digite o código" />
+            <button onclick="buscarProduto()">Buscar</button>
+            <div id="resultadoBusca"></div>
+          </section>
+        
+          <h3>Venda por peso</h3>
+          <form>
+            <label>Produto: <input type="text" id="nome-produto" /></label><br />
+            <label>Peso (kg): <input type="number" id="peso-produto" /></label><br />
+            <label>Preço por kg (R$): <input type="number" id="preco-kg" /></label><br />
+            <button type="button" onclick="calcularValor()">Calcular Valor</button>
+            <p id="valor-total"></p>
+          </form>
+
+          <h2>Caixa</h2>
+          <form>
+            <label>Total da compra (R$): <input type="number" id="valor-compra" /></label><br />
+            <label>Pagamento (R$): <input type="number" id="valor-pago" /></label><br />
+        
+            <label>Forma de pagamento:
+              <select id="forma-pagamento">
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Débito">Cartão Débito</option>
+                <option value="Crédito">Cartão Crédito</option>
+                <option value="Pix">Pix</option>
+              </select>
+            </label><br />
+            <button type="button" onclick="calcularTroco()">Finalizar Venda</button>
+            <p id="resultado-troco"></p>
+          </form>
+        
+          <!--Balança-->
+          <section id="balanca">
+            <h2>Simular Balança 🥩</h2>
+            <input type="text" id="codigoPeso" placeholder="Código do produto" />
+            <input type="number" id="peso" placeholder="Peso (kg)" />
+            <button onclick="calcularPrecoPorPeso()">Calcular</button>
+            <div id="resultadoPeso"></div>
+          </section>
+          <h1>Mercadinho Morezine</h1>
+          <button onclick="imprimirRecibo()">🖨️ Imprimir Recibo</button>
+        
+          <div id="recibo" style="display: none;">
+            <h1>Recibo</h1>
+            <p>Estada: da Fonte Santa km 81 Lote: 7
+              N°: 954 Casa 4 Fonte Santa: Teresópolis RJ: Brasil.
+            </p>
+            <p>Data: <span id="data-hora"></span></p>
+            <hr>
+            <p>--------------------------</p>
+            <p>🍞 Pão francês - R$ 3,00</p>
+            <p>🥛 Leite - R$ 5,50</p>
+            <p>🍎 Maçã - R$ 4,20</p>
+        
+            <hr>
+            <p>---------------------------</p>
+            <strong>Total: R$ 12,70</strong>
+            <p>Volte sempre! 😊</p>
+          </div>
+          <script src="app.js"></script>
+          </body>
+        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
